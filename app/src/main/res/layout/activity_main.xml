@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3b5998">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#3b5998">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook"/>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Name"
+            android:textColor="#E2E2E2"
+            />
+        <EditText
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="Enter you name"
+            android:cursorVisible="true"
+            android:background="#627AAD"
+            android:textColor="#E2E2E2"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Phone"
+            android:textColor="#E2E2E2"
+            />
+        <EditText
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:text="Enter you number"
+            android:cursorVisible="true"
+            android:background="#627AAD"
+            android:textColor="#E2E2E2"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Email"
+            android:textColor="#E2E2E2"
+            />
+        <EditText
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="Enter you email"
+            android:cursorVisible="true"
+            android:background="#627AAD"
+            android:textColor="#E2E2E2"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:singleLine="true"
+            android:paddingTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:text="Gender"
+            android:textColor="#e2e2e2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:layout_weight=".70"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+
+                android:layout_width="0dp"
+                android:id="@+id/rb1"
+                android:layout_weight=".20"
+                android:layout_height="wrap_content"
+                android:button="@drawable/design"
+                android:checked="true"
+                android:text="Male"
+                android:textColor="#E2E2E2"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight=".20"
+                android:id="@+id/rb2"
+                android:layout_height="wrap_content"
+                android:button="@drawable/design"
+                android:checked="false"
+                android:text="Female"
+                android:textColor="#e2e2e2"/>>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:singleLine="true"
+                android:layout_width="0dp"
+               android:layout_weight="0.30"
+                android:text="Login with"
+                android:textColor="#e2e2e2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+            <CheckBox
+
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:button="@drawable/designcb"
+                android:checked="true"
+                android:text="Google"
+                android:textColor="#E2E2E2"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:button="@drawable/designcb"
+                android:checked="false"
+                android:text="Twitter"
+                android:textColor="#e2e2e2"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:visibility="invisible"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content" />
+            <CheckBox
+
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:button="@drawable/designcb"
+                android:checked="false"
+                android:text="Google"
+                android:textColor="#E2E2E2"/>
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="wrap_content"
+                android:button="@drawable/designcb"
+                android:checked="false"
+                android:text="Twitter"
+                android:textColor="#e2e2e2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:singleLine="true"
+                android:paddingTop="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:text="Gender"
+                android:textColor="#e2e2e2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/country_prompt"
+                android:entries="@array/country_arrays"/>
+        </LinearLayout>
+    <LinearLayout
+
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Sign Up"
+            />
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+   </LinearLayout>
